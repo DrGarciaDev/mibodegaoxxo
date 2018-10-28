@@ -1,6 +1,8 @@
 ﻿/*
  * Creado por SharpDevelop.
  * Usuario: Carlos
+ * Modificado por Luis García
+ * FECHA DE MODIFICACIÓN 27/10/2018
  * Fecha: 15/10/2018
  * Hora: 05:40 p. m.
  * 
@@ -31,6 +33,10 @@ namespace MibodegaOxxo
 		void BtnCerrarClick(object sender, EventArgs e)
 		{
 			this.Close();
+		}
+		void BtnMostrarProveedoresClick(object sender, EventArgs e)
+		{
+			dgvMostrarProveedores.DataSource = ProveedorDAL.Mostrar();
 		}
 	}
 }

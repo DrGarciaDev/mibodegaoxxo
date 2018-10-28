@@ -21,7 +21,7 @@ namespace MibodegaOxxo
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.DataGridView dgvMostrarProveedores;
 		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Button btnDesplegarListaProveedores;
+		private System.Windows.Forms.Button btnMostrarProveedores;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -53,7 +53,7 @@ namespace MibodegaOxxo
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.btnDesplegarListaProveedores = new System.Windows.Forms.Button();
+			this.btnMostrarProveedores = new System.Windows.Forms.Button();
 			this.dgvMostrarProveedores = new System.Windows.Forms.DataGridView();
 			this.label12 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
@@ -109,7 +109,7 @@ namespace MibodegaOxxo
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.White;
-			this.panel2.Controls.Add(this.btnDesplegarListaProveedores);
+			this.panel2.Controls.Add(this.btnMostrarProveedores);
 			this.panel2.Controls.Add(this.dgvMostrarProveedores);
 			this.panel2.Controls.Add(this.label12);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -118,25 +118,26 @@ namespace MibodegaOxxo
 			this.panel2.Size = new System.Drawing.Size(730, 465);
 			this.panel2.TabIndex = 3;
 			// 
-			// btnDesplegarListaProveedores
+			// btnMostrarProveedores
 			// 
-			this.btnDesplegarListaProveedores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.btnMostrarProveedores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
 			| System.Windows.Forms.AnchorStyles.Right)));
-			this.btnDesplegarListaProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-			this.btnDesplegarListaProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnDesplegarListaProveedores.FlatAppearance.BorderSize = 0;
-			this.btnDesplegarListaProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-			this.btnDesplegarListaProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnDesplegarListaProveedores.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnDesplegarListaProveedores.ForeColor = System.Drawing.Color.White;
-			this.btnDesplegarListaProveedores.Image = ((System.Drawing.Image)(resources.GetObject("btnDesplegarListaProveedores.Image")));
-			this.btnDesplegarListaProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnDesplegarListaProveedores.Location = new System.Drawing.Point(193, 398);
-			this.btnDesplegarListaProveedores.Name = "btnDesplegarListaProveedores";
-			this.btnDesplegarListaProveedores.Size = new System.Drawing.Size(396, 40);
-			this.btnDesplegarListaProveedores.TabIndex = 7;
-			this.btnDesplegarListaProveedores.Text = "Desplegar lista de proveedores";
-			this.btnDesplegarListaProveedores.UseVisualStyleBackColor = false;
+			this.btnMostrarProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.btnMostrarProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnMostrarProveedores.FlatAppearance.BorderSize = 0;
+			this.btnMostrarProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+			this.btnMostrarProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnMostrarProveedores.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnMostrarProveedores.ForeColor = System.Drawing.Color.White;
+			this.btnMostrarProveedores.Image = ((System.Drawing.Image)(resources.GetObject("btnMostrarProveedores.Image")));
+			this.btnMostrarProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnMostrarProveedores.Location = new System.Drawing.Point(193, 398);
+			this.btnMostrarProveedores.Name = "btnMostrarProveedores";
+			this.btnMostrarProveedores.Size = new System.Drawing.Size(396, 40);
+			this.btnMostrarProveedores.TabIndex = 7;
+			this.btnMostrarProveedores.Text = "Desplegar lista de proveedores";
+			this.btnMostrarProveedores.UseVisualStyleBackColor = false;
+			this.btnMostrarProveedores.Click += new System.EventHandler(this.BtnMostrarProveedoresClick);
 			// 
 			// dgvMostrarProveedores
 			// 

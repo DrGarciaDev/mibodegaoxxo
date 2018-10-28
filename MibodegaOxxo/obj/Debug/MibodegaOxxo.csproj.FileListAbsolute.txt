@@ -52,3 +52,30 @@ C:\Users\Virtual\Documents\MibodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.pdb
 C:\Users\Virtual\Documents\MibodegaOxxo\MibodegaOxxo\bin\Debug\MibodegaOxxo.exe.config
 C:\Users\Virtual\Documents\MibodegaOxxo\MibodegaOxxo\bin\Debug\MibodegaOxxo.exe
 C:\Users\Virtual\Documents\MibodegaOxxo\MibodegaOxxo\bin\Debug\MibodegaOxxo.pdb
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\bin\Debug\MibodegaOxxo.exe.config
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\bin\Debug\MibodegaOxxo.exe
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\bin\Debug\MibodegaOxxo.pdb
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.csprojResolveAssemblyReference.cache
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.ConsultarProductos.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.ConsultarProveedor.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.ConsultarUsuario.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.Depositos.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.MainForm.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.MibodegaVentanaPrincipal.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.MostrarDepositos.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.MostrarProveedores.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.MostrarUsuarios.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.MostrarVentas.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.MotrarProductos.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.Productos.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.Proveedores.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.RealizarDepositos.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.RealizarVenta.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.RegistrarProducto.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.RegistrarProveedor.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.RegistrarUsuario.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.Usuarios.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.Ventas.resources
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.csproj.GenerateResource.Cache
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.exe
+C:\Users\luis_\Documents\SharpDevelop Projects\MiBodegaOxxo\MibodegaOxxo\obj\Debug\MibodegaOxxo.pdb

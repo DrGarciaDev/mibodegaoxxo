@@ -21,19 +21,19 @@ namespace MibodegaOxxo
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox textCorreo;
+		private System.Windows.Forms.TextBox textTelefono;
+		private System.Windows.Forms.TextBox textRFC;
+		private System.Windows.Forms.TextBox textEmpresa;
+		private System.Windows.Forms.TextBox textMaterno;
+		private System.Windows.Forms.TextBox textPaterno;
+		private System.Windows.Forms.TextBox textNombre;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Button btnRegistrarProducto;
+		private System.Windows.Forms.Button btnGuardarProveedor;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -62,21 +62,21 @@ namespace MibodegaOxxo
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.btnGuardarProveedor = new System.Windows.Forms.Button();
+			this.textCorreo = new System.Windows.Forms.TextBox();
+			this.textTelefono = new System.Windows.Forms.TextBox();
+			this.textRFC = new System.Windows.Forms.TextBox();
+			this.textEmpresa = new System.Windows.Forms.TextBox();
+			this.textMaterno = new System.Windows.Forms.TextBox();
+			this.textPaterno = new System.Windows.Forms.TextBox();
+			this.textNombre = new System.Windows.Forms.TextBox();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.btnRegistrarProducto = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -129,14 +129,14 @@ namespace MibodegaOxxo
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.White;
-			this.panel2.Controls.Add(this.btnRegistrarProducto);
-			this.panel2.Controls.Add(this.textBox7);
-			this.panel2.Controls.Add(this.textBox6);
-			this.panel2.Controls.Add(this.textBox5);
-			this.panel2.Controls.Add(this.textBox4);
-			this.panel2.Controls.Add(this.textBox3);
-			this.panel2.Controls.Add(this.textBox2);
-			this.panel2.Controls.Add(this.textBox1);
+			this.panel2.Controls.Add(this.btnGuardarProveedor);
+			this.panel2.Controls.Add(this.textCorreo);
+			this.panel2.Controls.Add(this.textTelefono);
+			this.panel2.Controls.Add(this.textRFC);
+			this.panel2.Controls.Add(this.textEmpresa);
+			this.panel2.Controls.Add(this.textMaterno);
+			this.panel2.Controls.Add(this.textPaterno);
+			this.panel2.Controls.Add(this.textNombre);
 			this.panel2.Controls.Add(this.label7);
 			this.panel2.Controls.Add(this.label6);
 			this.panel2.Controls.Add(this.label5);
@@ -149,6 +149,128 @@ namespace MibodegaOxxo
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(730, 465);
 			this.panel2.TabIndex = 2;
+			// 
+			// btnGuardarProveedor
+			// 
+			this.btnGuardarProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
+			this.btnGuardarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.btnGuardarProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnGuardarProveedor.FlatAppearance.BorderSize = 0;
+			this.btnGuardarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+			this.btnGuardarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnGuardarProveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnGuardarProveedor.ForeColor = System.Drawing.Color.White;
+			this.btnGuardarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardarProveedor.Image")));
+			this.btnGuardarProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnGuardarProveedor.Location = new System.Drawing.Point(212, 398);
+			this.btnGuardarProveedor.Name = "btnGuardarProveedor";
+			this.btnGuardarProveedor.Size = new System.Drawing.Size(322, 40);
+			this.btnGuardarProveedor.TabIndex = 14;
+			this.btnGuardarProveedor.Text = "Guardar proveedor";
+			this.btnGuardarProveedor.UseVisualStyleBackColor = false;
+			this.btnGuardarProveedor.Click += new System.EventHandler(this.BtnGuardarProveedorClick);
+			// 
+			// textCorreo
+			// 
+			this.textCorreo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textCorreo.Location = new System.Drawing.Point(85, 322);
+			this.textCorreo.Name = "textCorreo";
+			this.textCorreo.Size = new System.Drawing.Size(630, 27);
+			this.textCorreo.TabIndex = 13;
+			// 
+			// textTelefono
+			// 
+			this.textTelefono.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textTelefono.Location = new System.Drawing.Point(491, 276);
+			this.textTelefono.Name = "textTelefono";
+			this.textTelefono.Size = new System.Drawing.Size(223, 27);
+			this.textTelefono.TabIndex = 12;
+			// 
+			// textRFC
+			// 
+			this.textRFC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textRFC.Location = new System.Drawing.Point(174, 275);
+			this.textRFC.Name = "textRFC";
+			this.textRFC.Size = new System.Drawing.Size(223, 27);
+			this.textRFC.TabIndex = 11;
+			// 
+			// textEmpresa
+			// 
+			this.textEmpresa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textEmpresa.Location = new System.Drawing.Point(16, 236);
+			this.textEmpresa.Name = "textEmpresa";
+			this.textEmpresa.Size = new System.Drawing.Size(699, 27);
+			this.textEmpresa.TabIndex = 10;
+			// 
+			// textMaterno
+			// 
+			this.textMaterno.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textMaterno.Location = new System.Drawing.Point(16, 183);
+			this.textMaterno.Name = "textMaterno";
+			this.textMaterno.Size = new System.Drawing.Size(699, 27);
+			this.textMaterno.TabIndex = 9;
+			// 
+			// textPaterno
+			// 
+			this.textPaterno.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textPaterno.Location = new System.Drawing.Point(16, 128);
+			this.textPaterno.Name = "textPaterno";
+			this.textPaterno.Size = new System.Drawing.Size(699, 27);
+			this.textPaterno.TabIndex = 8;
+			// 
+			// textNombre
+			// 
+			this.textNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textNombre.Location = new System.Drawing.Point(12, 73);
+			this.textNombre.Name = "textNombre";
+			this.textNombre.Size = new System.Drawing.Size(699, 27);
+			this.textNombre.TabIndex = 7;
+			// 
+			// label7
+			// 
+			this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.Location = new System.Drawing.Point(410, 280);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(80, 23);
+			this.label7.TabIndex = 6;
+			this.label7.Text = "Telefono";
+			// 
+			// label6
+			// 
+			this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(12, 326);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(266, 23);
+			this.label6.TabIndex = 5;
+			this.label6.Text = "Correo";
+			// 
+			// label5
+			// 
+			this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(12, 279);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(266, 23);
+			this.label5.TabIndex = 4;
+			this.label5.Text = "RFC de la Empresa";
+			// 
+			// label4
+			// 
+			this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(12, 213);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(266, 23);
+			this.label4.TabIndex = 3;
+			this.label4.Text = "Nombre de la Empresa";
+			// 
+			// label3
+			// 
+			this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(12, 158);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(266, 23);
+			this.label3.TabIndex = 2;
+			this.label3.Text = "Apellido materno del proveedor";
 			// 
 			// label2
 			// 
@@ -168,127 +290,6 @@ namespace MibodegaOxxo
 			this.label1.Size = new System.Drawing.Size(194, 23);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Nombre del Proveedor";
-			// 
-			// label3
-			// 
-			this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(12, 158);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(266, 23);
-			this.label3.TabIndex = 2;
-			this.label3.Text = "Apellido materno del proveedor";
-			// 
-			// label4
-			// 
-			this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(12, 213);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(266, 23);
-			this.label4.TabIndex = 3;
-			this.label4.Text = "Nombre de la Empresa";
-			// 
-			// label5
-			// 
-			this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(12, 279);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(266, 23);
-			this.label5.TabIndex = 4;
-			this.label5.Text = "RFC de la Empresa";
-			// 
-			// label6
-			// 
-			this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(12, 326);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(266, 23);
-			this.label6.TabIndex = 5;
-			this.label6.Text = "Correo";
-			// 
-			// label7
-			// 
-			this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.Location = new System.Drawing.Point(410, 280);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(80, 23);
-			this.label7.TabIndex = 6;
-			this.label7.Text = "Telefono";
-			// 
-			// textBox1
-			// 
-			this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.Location = new System.Drawing.Point(12, 73);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(699, 27);
-			this.textBox1.TabIndex = 7;
-			// 
-			// textBox2
-			// 
-			this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox2.Location = new System.Drawing.Point(16, 128);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(699, 27);
-			this.textBox2.TabIndex = 8;
-			// 
-			// textBox3
-			// 
-			this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox3.Location = new System.Drawing.Point(16, 183);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(699, 27);
-			this.textBox3.TabIndex = 9;
-			// 
-			// textBox4
-			// 
-			this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox4.Location = new System.Drawing.Point(16, 236);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(699, 27);
-			this.textBox4.TabIndex = 10;
-			// 
-			// textBox5
-			// 
-			this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox5.Location = new System.Drawing.Point(174, 275);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(223, 27);
-			this.textBox5.TabIndex = 11;
-			// 
-			// textBox6
-			// 
-			this.textBox6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox6.Location = new System.Drawing.Point(491, 276);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(223, 27);
-			this.textBox6.TabIndex = 12;
-			// 
-			// textBox7
-			// 
-			this.textBox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox7.Location = new System.Drawing.Point(85, 322);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(630, 27);
-			this.textBox7.TabIndex = 13;
-			// 
-			// btnRegistrarProducto
-			// 
-			this.btnRegistrarProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-			| System.Windows.Forms.AnchorStyles.Right)));
-			this.btnRegistrarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-			this.btnRegistrarProducto.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnRegistrarProducto.FlatAppearance.BorderSize = 0;
-			this.btnRegistrarProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-			this.btnRegistrarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnRegistrarProducto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnRegistrarProducto.ForeColor = System.Drawing.Color.White;
-			this.btnRegistrarProducto.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrarProducto.Image")));
-			this.btnRegistrarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnRegistrarProducto.Location = new System.Drawing.Point(212, 398);
-			this.btnRegistrarProducto.Name = "btnRegistrarProducto";
-			this.btnRegistrarProducto.Size = new System.Drawing.Size(322, 40);
-			this.btnRegistrarProducto.TabIndex = 14;
-			this.btnRegistrarProducto.Text = "Guardar proveedor";
-			this.btnRegistrarProducto.UseVisualStyleBackColor = false;
 			// 
 			// RegistrarProveedor
 			// 

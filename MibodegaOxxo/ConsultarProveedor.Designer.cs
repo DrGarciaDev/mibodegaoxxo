@@ -15,22 +15,22 @@ namespace MibodegaOxxo
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Button btnBuscar;
-		private System.Windows.Forms.TextBox txtRfc;
-		private System.Windows.Forms.TextBox txtNombreProveedor;
+		private System.Windows.Forms.Button btnBuscarProveedor;
+		private System.Windows.Forms.TextBox txtRfcBusqueda;
+		private System.Windows.Forms.TextBox txtNombreBusqueda;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Label btnCerrar;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Button btnSeleccionar;
+		private System.Windows.Forms.Button btnSeleccionarProveedor;
 		private System.Windows.Forms.DataGridView dgvConsultaProveedor;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtCorreo;
+		private System.Windows.Forms.TextBox txtTelefono;
+		private System.Windows.Forms.TextBox txtRfcEmpresa;
+		private System.Windows.Forms.TextBox txtEmpresa;
+		private System.Windows.Forms.TextBox txtApeMaterno;
+		private System.Windows.Forms.TextBox txtNombre;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label5;
@@ -38,9 +38,9 @@ namespace MibodegaOxxo
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.Button btnActualizar;
-		private System.Windows.Forms.Button btnEliminar;
+		private System.Windows.Forms.TextBox txtApePaterno;
+		private System.Windows.Forms.Button btnActualizarProveedor;
+		private System.Windows.Forms.Button btnEliminarProveedor;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -69,30 +69,30 @@ namespace MibodegaOxxo
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label10 = new System.Windows.Forms.Label();
-			this.btnBuscar = new System.Windows.Forms.Button();
-			this.txtRfc = new System.Windows.Forms.TextBox();
-			this.txtNombreProveedor = new System.Windows.Forms.TextBox();
+			this.btnBuscarProveedor = new System.Windows.Forms.Button();
+			this.txtRfcBusqueda = new System.Windows.Forms.TextBox();
+			this.txtNombreBusqueda = new System.Windows.Forms.TextBox();
 			this.label11 = new System.Windows.Forms.Label();
 			this.btnCerrar = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.btnActualizar = new System.Windows.Forms.Button();
-			this.btnEliminar = new System.Windows.Forms.Button();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.btnActualizarProveedor = new System.Windows.Forms.Button();
+			this.btnEliminarProveedor = new System.Windows.Forms.Button();
+			this.txtEmpresa = new System.Windows.Forms.TextBox();
+			this.txtApePaterno = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.txtNombre = new System.Windows.Forms.TextBox();
+			this.txtCorreo = new System.Windows.Forms.TextBox();
+			this.txtTelefono = new System.Windows.Forms.TextBox();
+			this.txtRfcEmpresa = new System.Windows.Forms.TextBox();
+			this.txtApeMaterno = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.btnSeleccionar = new System.Windows.Forms.Button();
+			this.btnSeleccionarProveedor = new System.Windows.Forms.Button();
 			this.dgvConsultaProveedor = new System.Windows.Forms.DataGridView();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,9 +104,9 @@ namespace MibodegaOxxo
 			// 
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(171)))), ((int)(((byte)(4)))));
 			this.panel1.Controls.Add(this.label10);
-			this.panel1.Controls.Add(this.btnBuscar);
-			this.panel1.Controls.Add(this.txtRfc);
-			this.panel1.Controls.Add(this.txtNombreProveedor);
+			this.panel1.Controls.Add(this.btnBuscarProveedor);
+			this.panel1.Controls.Add(this.txtRfcBusqueda);
+			this.panel1.Controls.Add(this.txtNombreBusqueda);
 			this.panel1.Controls.Add(this.label11);
 			this.panel1.Controls.Add(this.btnCerrar);
 			this.panel1.Controls.Add(this.pictureBox1);
@@ -125,36 +125,37 @@ namespace MibodegaOxxo
 			this.label10.TabIndex = 11;
 			this.label10.Text = "RFC de la empresa:";
 			// 
-			// btnBuscar
+			// btnBuscarProveedor
 			// 
-			this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-			this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnBuscar.FlatAppearance.BorderSize = 0;
-			this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnBuscar.ForeColor = System.Drawing.Color.White;
-			this.btnBuscar.Location = new System.Drawing.Point(14, 356);
-			this.btnBuscar.Name = "btnBuscar";
-			this.btnBuscar.Size = new System.Drawing.Size(198, 34);
-			this.btnBuscar.TabIndex = 10;
-			this.btnBuscar.Text = "buscar";
-			this.btnBuscar.UseVisualStyleBackColor = false;
+			this.btnBuscarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.btnBuscarProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnBuscarProveedor.FlatAppearance.BorderSize = 0;
+			this.btnBuscarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnBuscarProveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBuscarProveedor.ForeColor = System.Drawing.Color.White;
+			this.btnBuscarProveedor.Location = new System.Drawing.Point(14, 356);
+			this.btnBuscarProveedor.Name = "btnBuscarProveedor";
+			this.btnBuscarProveedor.Size = new System.Drawing.Size(198, 34);
+			this.btnBuscarProveedor.TabIndex = 10;
+			this.btnBuscarProveedor.Text = "buscar";
+			this.btnBuscarProveedor.UseVisualStyleBackColor = false;
+			this.btnBuscarProveedor.Click += new System.EventHandler(this.BtnBuscarProveedorClick);
 			// 
-			// txtRfc
+			// txtRfcBusqueda
 			// 
-			this.txtRfc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtRfc.Location = new System.Drawing.Point(14, 304);
-			this.txtRfc.Name = "txtRfc";
-			this.txtRfc.Size = new System.Drawing.Size(198, 27);
-			this.txtRfc.TabIndex = 9;
+			this.txtRfcBusqueda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtRfcBusqueda.Location = new System.Drawing.Point(14, 304);
+			this.txtRfcBusqueda.Name = "txtRfcBusqueda";
+			this.txtRfcBusqueda.Size = new System.Drawing.Size(198, 27);
+			this.txtRfcBusqueda.TabIndex = 9;
 			// 
-			// txtNombreProveedor
+			// txtNombreBusqueda
 			// 
-			this.txtNombreProveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtNombreProveedor.Location = new System.Drawing.Point(14, 252);
-			this.txtNombreProveedor.Name = "txtNombreProveedor";
-			this.txtNombreProveedor.Size = new System.Drawing.Size(198, 27);
-			this.txtNombreProveedor.TabIndex = 8;
+			this.txtNombreBusqueda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtNombreBusqueda.Location = new System.Drawing.Point(14, 252);
+			this.txtNombreBusqueda.Name = "txtNombreBusqueda";
+			this.txtNombreBusqueda.Size = new System.Drawing.Size(198, 27);
+			this.txtNombreBusqueda.TabIndex = 8;
 			// 
 			// label11
 			// 
@@ -189,23 +190,23 @@ namespace MibodegaOxxo
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.White;
-			this.panel2.Controls.Add(this.btnActualizar);
-			this.panel2.Controls.Add(this.btnEliminar);
-			this.panel2.Controls.Add(this.textBox4);
-			this.panel2.Controls.Add(this.textBox2);
+			this.panel2.Controls.Add(this.btnActualizarProveedor);
+			this.panel2.Controls.Add(this.btnEliminarProveedor);
+			this.panel2.Controls.Add(this.txtEmpresa);
+			this.panel2.Controls.Add(this.txtApePaterno);
 			this.panel2.Controls.Add(this.label2);
-			this.panel2.Controls.Add(this.textBox1);
-			this.panel2.Controls.Add(this.textBox7);
-			this.panel2.Controls.Add(this.textBox6);
-			this.panel2.Controls.Add(this.textBox5);
-			this.panel2.Controls.Add(this.textBox3);
+			this.panel2.Controls.Add(this.txtNombre);
+			this.panel2.Controls.Add(this.txtCorreo);
+			this.panel2.Controls.Add(this.txtTelefono);
+			this.panel2.Controls.Add(this.txtRfcEmpresa);
+			this.panel2.Controls.Add(this.txtApeMaterno);
 			this.panel2.Controls.Add(this.label7);
 			this.panel2.Controls.Add(this.label6);
 			this.panel2.Controls.Add(this.label5);
 			this.panel2.Controls.Add(this.label4);
 			this.panel2.Controls.Add(this.label3);
 			this.panel2.Controls.Add(this.label1);
-			this.panel2.Controls.Add(this.btnSeleccionar);
+			this.panel2.Controls.Add(this.btnSeleccionarProveedor);
 			this.panel2.Controls.Add(this.dgvConsultaProveedor);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -213,51 +214,53 @@ namespace MibodegaOxxo
 			this.panel2.Size = new System.Drawing.Size(728, 465);
 			this.panel2.TabIndex = 3;
 			// 
-			// btnActualizar
+			// btnActualizarProveedor
 			// 
-			this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-			this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnActualizar.FlatAppearance.BorderSize = 0;
-			this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnActualizar.ForeColor = System.Drawing.Color.White;
-			this.btnActualizar.Location = new System.Drawing.Point(515, 417);
-			this.btnActualizar.Name = "btnActualizar";
-			this.btnActualizar.Size = new System.Drawing.Size(198, 34);
-			this.btnActualizar.TabIndex = 34;
-			this.btnActualizar.Text = "Actualizar";
-			this.btnActualizar.UseVisualStyleBackColor = false;
+			this.btnActualizarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.btnActualizarProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnActualizarProveedor.FlatAppearance.BorderSize = 0;
+			this.btnActualizarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnActualizarProveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnActualizarProveedor.ForeColor = System.Drawing.Color.White;
+			this.btnActualizarProveedor.Location = new System.Drawing.Point(515, 417);
+			this.btnActualizarProveedor.Name = "btnActualizarProveedor";
+			this.btnActualizarProveedor.Size = new System.Drawing.Size(198, 34);
+			this.btnActualizarProveedor.TabIndex = 34;
+			this.btnActualizarProveedor.Text = "Actualizar";
+			this.btnActualizarProveedor.UseVisualStyleBackColor = false;
+			this.btnActualizarProveedor.Click += new System.EventHandler(this.BtnActualizarProveedorClick);
 			// 
-			// btnEliminar
+			// btnEliminarProveedor
 			// 
-			this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-			this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnEliminar.FlatAppearance.BorderSize = 0;
-			this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnEliminar.ForeColor = System.Drawing.Color.White;
-			this.btnEliminar.Location = new System.Drawing.Point(55, 417);
-			this.btnEliminar.Name = "btnEliminar";
-			this.btnEliminar.Size = new System.Drawing.Size(198, 34);
-			this.btnEliminar.TabIndex = 33;
-			this.btnEliminar.Text = "Eliminar";
-			this.btnEliminar.UseVisualStyleBackColor = false;
+			this.btnEliminarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.btnEliminarProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnEliminarProveedor.FlatAppearance.BorderSize = 0;
+			this.btnEliminarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnEliminarProveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEliminarProveedor.ForeColor = System.Drawing.Color.White;
+			this.btnEliminarProveedor.Location = new System.Drawing.Point(55, 417);
+			this.btnEliminarProveedor.Name = "btnEliminarProveedor";
+			this.btnEliminarProveedor.Size = new System.Drawing.Size(198, 34);
+			this.btnEliminarProveedor.TabIndex = 33;
+			this.btnEliminarProveedor.Text = "Eliminar";
+			this.btnEliminarProveedor.UseVisualStyleBackColor = false;
+			this.btnEliminarProveedor.Click += new System.EventHandler(this.BtnEliminarProveedorClick);
 			// 
-			// textBox4
+			// txtEmpresa
 			// 
-			this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox4.Location = new System.Drawing.Point(205, 314);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(508, 27);
-			this.textBox4.TabIndex = 32;
+			this.txtEmpresa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtEmpresa.Location = new System.Drawing.Point(205, 314);
+			this.txtEmpresa.Name = "txtEmpresa";
+			this.txtEmpresa.Size = new System.Drawing.Size(508, 27);
+			this.txtEmpresa.TabIndex = 32;
 			// 
-			// textBox2
+			// txtApePaterno
 			// 
-			this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox2.Location = new System.Drawing.Point(528, 241);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(185, 27);
-			this.textBox2.TabIndex = 31;
+			this.txtApePaterno.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtApePaterno.Location = new System.Drawing.Point(528, 241);
+			this.txtApePaterno.Name = "txtApePaterno";
+			this.txtApePaterno.Size = new System.Drawing.Size(185, 27);
+			this.txtApePaterno.TabIndex = 31;
 			// 
 			// label2
 			// 
@@ -268,45 +271,45 @@ namespace MibodegaOxxo
 			this.label2.TabIndex = 30;
 			this.label2.Text = "Apellido paterno";
 			// 
-			// textBox1
+			// txtNombre
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.Location = new System.Drawing.Point(193, 241);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(162, 27);
-			this.textBox1.TabIndex = 28;
+			this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtNombre.Location = new System.Drawing.Point(204, 243);
+			this.txtNombre.Name = "txtNombre";
+			this.txtNombre.Size = new System.Drawing.Size(162, 27);
+			this.txtNombre.TabIndex = 28;
 			// 
-			// textBox7
+			// txtCorreo
 			// 
-			this.textBox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox7.Location = new System.Drawing.Point(83, 384);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(630, 27);
-			this.textBox7.TabIndex = 27;
+			this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtCorreo.Location = new System.Drawing.Point(204, 384);
+			this.txtCorreo.Name = "txtCorreo";
+			this.txtCorreo.Size = new System.Drawing.Size(509, 27);
+			this.txtCorreo.TabIndex = 27;
 			// 
-			// textBox6
+			// txtTelefono
 			// 
-			this.textBox6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox6.Location = new System.Drawing.Point(490, 279);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(223, 27);
-			this.textBox6.TabIndex = 26;
+			this.txtTelefono.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtTelefono.Location = new System.Drawing.Point(528, 279);
+			this.txtTelefono.Name = "txtTelefono";
+			this.txtTelefono.Size = new System.Drawing.Size(185, 27);
+			this.txtTelefono.TabIndex = 26;
 			// 
-			// textBox5
+			// txtRfcEmpresa
 			// 
-			this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox5.Location = new System.Drawing.Point(205, 349);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(508, 27);
-			this.textBox5.TabIndex = 25;
+			this.txtRfcEmpresa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtRfcEmpresa.Location = new System.Drawing.Point(205, 349);
+			this.txtRfcEmpresa.Name = "txtRfcEmpresa";
+			this.txtRfcEmpresa.Size = new System.Drawing.Size(508, 27);
+			this.txtRfcEmpresa.TabIndex = 25;
 			// 
-			// textBox3
+			// txtApeMaterno
 			// 
-			this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox3.Location = new System.Drawing.Point(193, 279);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(162, 27);
-			this.textBox3.TabIndex = 23;
+			this.txtApeMaterno.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtApeMaterno.Location = new System.Drawing.Point(204, 279);
+			this.txtApeMaterno.Name = "txtApeMaterno";
+			this.txtApeMaterno.Size = new System.Drawing.Size(162, 27);
+			this.txtApeMaterno.TabIndex = 23;
 			// 
 			// label7
 			// 
@@ -362,20 +365,21 @@ namespace MibodegaOxxo
 			this.label1.TabIndex = 14;
 			this.label1.Text = "Nombre del Proveedor";
 			// 
-			// btnSeleccionar
+			// btnSeleccionarProveedor
 			// 
-			this.btnSeleccionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-			this.btnSeleccionar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSeleccionar.FlatAppearance.BorderSize = 0;
-			this.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnSeleccionar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSeleccionar.ForeColor = System.Drawing.Color.White;
-			this.btnSeleccionar.Location = new System.Drawing.Point(293, 203);
-			this.btnSeleccionar.Name = "btnSeleccionar";
-			this.btnSeleccionar.Size = new System.Drawing.Size(198, 34);
-			this.btnSeleccionar.TabIndex = 12;
-			this.btnSeleccionar.Text = "Seleccionar";
-			this.btnSeleccionar.UseVisualStyleBackColor = false;
+			this.btnSeleccionarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+			this.btnSeleccionarProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSeleccionarProveedor.FlatAppearance.BorderSize = 0;
+			this.btnSeleccionarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnSeleccionarProveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSeleccionarProveedor.ForeColor = System.Drawing.Color.White;
+			this.btnSeleccionarProveedor.Location = new System.Drawing.Point(293, 203);
+			this.btnSeleccionarProveedor.Name = "btnSeleccionarProveedor";
+			this.btnSeleccionarProveedor.Size = new System.Drawing.Size(198, 34);
+			this.btnSeleccionarProveedor.TabIndex = 12;
+			this.btnSeleccionarProveedor.Text = "Seleccionar";
+			this.btnSeleccionarProveedor.UseVisualStyleBackColor = false;
+			this.btnSeleccionarProveedor.Click += new System.EventHandler(this.BtnSeleccionarProveedorClick);
 			// 
 			// dgvConsultaProveedor
 			// 
